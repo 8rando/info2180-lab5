@@ -1,49 +1,40 @@
-/* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #eaeaea;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
+    background-color: #eaeaea;
 }
 
 header {
     background-color: #007bff;
     color: white;
-    text-align: center;
     padding: 10px 0;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2em;
+    text-align: center;
 }
 
 main {
     width: 80%;
-    max-width: 600px;
+    max-width: 960px;
     margin: 20px auto;
     padding: 20px;
-    background-color: white;
+    background: white;
+    border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Control Styles */
 #controls {
     margin-bottom: 20px;
 }
 
 #controls label {
-    font-weight: bold;
     margin-right: 10px;
 }
 
 #controls input[type="search"] {
     padding: 8px;
+    margin-right: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    width: calc(100% - 100px);
-    margin-right: 10px;
 }
 
 #controls button {
@@ -53,19 +44,43 @@ main {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s;
+}
+
+.controls button btn1 {
+    padding: 10px 15px;
+    background-color: lightcoral;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 #controls button:hover {
     background-color: #218838;
 }
 
-/* Result Display Styles */
-#result {
-    padding: 15px;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
     border: 1px solid #ddd;
-    border-radius: 4px;
+}
+
+th {
+    height: 50px;
+    background-color: #f2f2f2;
+    text-align: left;
+    padding: 8px;
+}
+
+td {
+    padding: 8px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
     background-color: #f9f9f9;
-    min-height: 50px; /* Adjust as needed */
-    word-wrap: break-word;
 }
